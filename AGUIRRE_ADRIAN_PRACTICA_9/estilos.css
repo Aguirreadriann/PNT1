@@ -1,0 +1,17 @@
+body{
+    background-color: lab(91.29% 0.7 7.9);
+}
+
+img{
+    border-radius: 10px;
+}
+
+textarea, input, select, button{
+    background-color: lab(94.1% 0 -0.01);
+}
+button{
+    border-radius: 5px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}

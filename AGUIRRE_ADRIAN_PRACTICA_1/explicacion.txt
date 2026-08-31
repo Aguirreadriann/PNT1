@@ -1,0 +1,64 @@
+🤖 IA permitida
+Podés pedirle a una IA que genere una estructura inicial.
+👤 Intervención humana
+Una vez generado el código:
+1. Cambiá completamente los textos por información propia.
+2. Agregá un nuevo subtítulo.
+3. Agregá un párrafo que no estuviera en el código generado.
+4. Eliminá una etiqueta que consideres innecesaria y verificá qué sucede.
+
+Respuesta: Elimine la etiqueta Section pensando que era innecesaria, si bien no hubo 
+cambios en lo visual, aprendi que es muy importante para ordenar contenido en comun.
+
+🧠 Pensá
+Respondé:
+¿Qué función cumple <html>?
+¿Qué diferencia hay entre <head> y <body>?
+¿Para qué sirve <title>?
+¿Qué diferencia hay entre <h1> y <h2>?
+
+Respuesta_1: La etiqueta <html> le indica al navegador el inicio y fin de un documento
+
+Respuesta_2: La etiqueta <head> es la estructura que representa la solapa de la pagina 
+y los metadatos que no se suelen dar a la vista a los usuarios.
+En cambio la etiqueta <body> es la estructura que agrupa todo lo que se va a visualizar
+en la pagina.
+
+Respuesta_3: La etiqueta <Title> sirva para poner u titulo en la solapa de la pagina.
+
+Respuesta_4: La diferencia es el tipo de jerarquia que representa y tipo de tamaño. Un
+<h1> puede utilizarse para un titulo principal y un <h2> para un subtitulo.
+
+🔧 Cambio sorpresa
+El profesor te informa:
+"La página ahora debe mostrar también una sección llamada Mis objetivos."
+Agregá esa sección sin volver a generar toda la página.
+🗣️ Defensa
+El profesor puede preguntarte:
+Señalame dónde comienza el contenido visible de tu página y explicame cómo lo sabés.
+
+Respuesta: Comienza en la etiqueta <body> porque es donde suelen ir los datos, imagenes,
+formularios, tablas, etc, que el usuario puede visualizar.
+
+
+
+Nombre y apellido: Aguirre Adrian TS2C
+Curso: Programación de nuevas tecnologias 1
+
+¿Utilicé IA?
+Sí.
+
+¿Qué herramienta utilicé?
+Gemini.
+
+¿Para qué la utilicé?
+La utilice para que me recomiende un editor (VS Code) en el cual realizar mi proyecto,
+para aprender atajos del teclado, y pulir mi solución una vez terminado el ejercicio, 
+de conceptos los cuales desconocia.
+
+¿Qué modificaciones realicé?
+Agregué las etiquetas <section> y <main> que desconocia su funcion.
+
+¿Qué aprendí?
+Aprendí la funcion de las etiquetas <section> y <main>, varios atajos con el teclado,
+la jerarquia de las etiquetas <h1>, <h2>, etc.

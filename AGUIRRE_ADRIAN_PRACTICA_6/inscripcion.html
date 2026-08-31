@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 6</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Inscripción</h1>
+        </section>
+
+        <section>
+            <form action="">
+                <h2>Datos personales</h2>
+
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" placeholder="Nombre" required><br>
+
+                <label for="apellido">Apellido:</label><br>
+                <input type="text" id="apellido" placeholder="Apellido"><br>
+
+                <label for="fecha">Fecha de Nacimiento:</label><br>
+                <input type="date" id="fecha"><br>
+
+                <label for="edad">Edad:</label><br>
+                <input type="number" id="edad" placeholder="Edad"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" placeholder="Email" required><br>
+
+                <label for="telefono">Teléfono:</label><br>
+                <input type="tel" id="telefono" placeholder="Telefono">
+
+                <h2>Curso</h2>
+
+                <label for="curso">Curso:</label>
+                <select name="curso" id="curso" required>
+                    <option value="">Seleccione curso</option>
+                    <option value="">Java</option>
+                    <option value="">JavaScript</option>
+                    <option value="">Testing</option>
+                    <option value="">Base de Datos</option>
+                    <option value="">Python</option>
+                </select>
+
+                <h2>Modalidad</h2>
+
+                <label for="presencial">Presencial</label>
+                <input type="radio" id="presencial" name="modalidad">
+
+                <label for="virtual">Virtual</label>
+                <input type="radio" id="virtual" name="modalidad">
+
+                <h2>Conocimientos</h2>
+
+                <label for="html">HTML</label>
+                <input type="checkbox" id="html" name="Conocimientos">
+
+                <label for="css">CSS</label>
+                <input type="checkbox" id="css" name="Conocimientos">
+
+                <label for="java">Java</label>
+                <input type="checkbox" id="java" name="Conocimientos">
+
+                <label for="sql">SQL</label>
+                <input type="checkbox" id="sql" name="Conocimientos">
+
+                <label for="javaScript">JavaScript</label>
+                <input type="checkbox" id="javaScript" name="Conocimientos"><br><br>
+
+                <label for="comentarios">Comentarios</label><br>
+                <textarea name="comentarios" id="comentarios" style="width: 300px; height: 150px;"></textarea><br>
+
+                <button type="submit">Inscribirme</button>
+
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

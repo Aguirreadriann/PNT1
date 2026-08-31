@@ -1,0 +1,41 @@
+Consigna
+Encontrar todos los errores.
+Para cada error indicar:
+ERROR:
+¿Qué está mal?
+
+Los atributos for de las etiquetas label, no coinciden con los atributos id de las etiquetas
+input. En modalidad los labels apuntan al mismo id.
+
+CORRECCIÓN:
+¿Qué cambiarías?
+
+Corregiria los atributos for y los haria coincidir con los atributos id. Modalidad la pondria
+con un <h2> en vez de una <p>.
+
+EXPLICACIÓN:
+¿Por qué estaba mal?
+
+Por que al no tener relacion los for con los id, cuando el usuario hace click en el texto
+no se seleccionara el campo.
+
+
+
+Nombre y apellido: Adrian Aguirre TS2C
+Curso: Programación de nuevas tecnologias 1
+
+¿Utilicé IA?
+Sí.
+
+¿Qué herramienta utilicé?
+Gemini.
+
+¿Para qué la utilicé?
+La utilicé para verificar si mi solución era correcta.
+
+¿Qué modificaciones realicé?
+Corregi los for y los id de los labels e inputs para que coincidan. Cambie el titulo modalidad
+por un <h2>.
+
+¿Qué aprendí?
+Mejore mi habilidad para leer y depurar codigo HTML.

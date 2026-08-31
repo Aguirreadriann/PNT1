@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 9</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pizzeria El Borde</h1>
+        <h2>La única pizza que te comes completa</h2>
+    </header>
+
+    <nav>
+        <a href="#">Menú</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Reservas</a>
+        <a href="#">Contacto</a> 
+    </nav>
+
+    <main>
+
+        <section>
+            <p>Bienvenido a la pizzeria el borde, <strong>la mejor pizzeria de la ciudad</strong>, contamos con una gran
+                variedad de pizzas y <strong>promociones</strong> para que disfrutes con tu familia y amigos.</p>
+            <img src="img/PizzeriaElBorde.jpg" alt="Local Pizzeria El Borde" style="width: 100%; height: auto;">
+        </section>
+
+        <section>
+            <h2>Platos mas recomendados</h2>
+            <ul>
+                <li><em>Muzzarella</em></li>
+                <li><em>Fugazzeta</em></li>
+                <li><em>Calabresa</em></li>
+                <li><em>Napolitana</em></li>
+                <li><em>Provolone</em></li>
+            </ul>
+            <img src="img/pizzasVarias.jpg" alt="Pizzas artesanales varias" style="width: 100%; height: auto;">
+        </section>
+
+        <section>
+            <h2>Menú del día</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Plato</th>
+                        <th>Descripción</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Pizza Jamon y morrón</td>
+                        <td>Masa artesanal con una base clásica de salsa de tomate, mozzarella fundida, finas lonchas de
+                            jamón cocido y pimientos morrones asados al horno.</td>
+                        <td>$15000</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Espinaca</td>
+                        <td>Combinación fresca y suave de espinaca salteada sobre una crema blanca o mozzarella,
+                            terminada
+                            con un toque de queso gratinado.</td>
+                        <td>$12000</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Roquefort</td>
+                        <td>Para los amantes de los sabores intensos, con una generosa base de queso roquefort fundido
+                            sobre
+                            abundante mozzarella y una lluvia opcional de nueces.</td>
+                        <td>$13000</td>
+                    </tr>
+                    <tr>
+                        <td>Pizza Cuatro quesos</td>
+                        <td>Mezcla equilibrada de mozzarella, queso azul, provolone y parmesano fundidos en perfecta
+                            armonía.</td>
+                        <td>$14000</td>
+                    </tr>
+                </tbody>
+            </table><br>
+            <img src="img/pizzasMesa.jpg" alt="Mesa con pizzas" style="width: 100%; height: auto;">
+        </section>
+
+        <section>
+            <form action="">
+                <h3>Reservar mesa</h3>
+
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br>
+
+                <label for="mail">Mail:</label><br>
+                <input type="email" id="mail" name="mail" required> <br>
+
+                <label for="personas">Cantidad de personas:</label><br>
+                <input type="number" id="personas" name="personas"><br>
+
+                <label for="horario">Horario:</label><br>
+                <select name="horario" id="horario">
+                    <option value="">Seleccionar horario</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="20:00">20:00</option>
+                    <option value="21:00">21:00</option>
+                    <option value="22:00">22:00</option>
+                    <option value="23:00">23:00</option>
+                </select><br>
+
+                <label for="mensaje">Pedido especial:</label><br>
+                <textarea name="mensaje" id="mensaje" placeholder="Escriba su pedido especial..."
+                    style="width: 170px; height: 100px;"></textarea><br>
+
+                <button type="submit">Reservar</button>
+
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <br>
+            <a href="#">Contacto</a>
+            <a href="#">Redes sociales</a>
+            <a href="#">Ubicación</a>
+        </p>
+    </footer>
+</body>
+
+</html>

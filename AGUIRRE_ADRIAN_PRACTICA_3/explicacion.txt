@@ -1,0 +1,56 @@
+🤖 IA permitida
+Podés pedirle a la IA ejemplos de <a> e <img>.
+👤 Intervención humana
+Deberás:
+Cambiar los enlaces.
+Cambiar las imágenes.
+Modificar todos los textos alt.
+Agregar un enlace nuevo.
+Eliminar una imagen.
+
+--> Imagen Promedios eliminada.
+
+🧠 Investigación
+Explicá:
+¿Por qué una imagen debería tener un atributo alt?
+
+
+--> RESPUESTA: Una imagen debe tener el atributo alt, en caso de que la
+misma ya no exista o falle su carga, el usuario sepa por medio de un texto
+de que se trata la imagen.
+
+
+🔧 Error para encontrar
+El profesor te entrega:
+<img src="foto.jpg" alt="imagen">
+y pregunta:
+La imagen no aparece. ¿Qué cosas revisarías?
+No alcanza con responder "está mal".
+Tenés que indicar qué revisarías y por qué.
+
+--> RESPUESTA: Revisaria si esa imagen esta dentro de una carpeta, si esta
+bien escrita la ruta de la imagen, respetando mayusculas y minisculas, si
+su extension es compatible con el archivo y si la imagen realmente existe.
+
+
+Nombre y apellido: Adrian Aguirre TS2C
+Curso: Programación de nuevas tecnologias 1
+
+¿Utilicé IA?
+Sí.
+
+¿Qué herramienta utilicé?
+Gemini
+
+¿Para qué la utilicé?
+La utilicé para aprender como colocar una imagen debajo de un ancor 
+sin salir del elemento de una lista.
+
+¿Qué modificaciones realicé?
+Agregué las etiquetas <br>, e imagenes descargadas en lugar de la ruta
+de la imagen.
+
+¿Qué aprendí?
+Aprendí para qué sirve la etiqueta <br>, como guardar una imagen en
+una carpeta dentro del mismo proyecto y ponerle medidas a una imagen.
+

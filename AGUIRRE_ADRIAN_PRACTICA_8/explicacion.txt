@@ -1,0 +1,81 @@
+🔵 PRÁCTICA 8 — El cliente cambia de opinión
+Esta práctica está pensada específicamente para trabajar la parte humana.
+Situación inicial
+Una universidad solicita un formulario de inscripción.
+El formulario debe tener:
+Nombre
+Apellido
+Email
+Carrera
+Modalidad
+Conocimientos previos
+Comentarios
+Podés utilizar IA para construirlo.
+
+🔧 Cambio 1
+El cliente informa:
+"La carrera debe ser seleccionada de una lista."
+¿Qué elemento utilizarías?
+
+-->RESPUESTA: Utilizaria una etiqueta <select> con sus respectivas etiquetas <option> para
+que el usuario tenga un amplio abanico de posibilidades a seleccionar sin ocupar mucho
+espacio de la pantalla.
+
+🔧 Cambio 2
+El cliente informa:
+"El alumno puede tener varios conocimientos."
+¿Qué elemento utilizarías?
+
+-->RESPUESTA: Utilizaria un input de tipo checkbox, ya que el usuario podra elegir entre
+una o varias opciones de conocimientos.
+
+🔧 Cambio 3
+El cliente informa:
+"La modalidad solamente puede ser presencial o virtual."
+¿Qué utilizarías?
+
+-->RESPUESTA: Utilizaria la etiqueta input tipo radio, ya que al relacionarla con el atributo
+name, el usuario podra seleccionar solo una de las dos opciones.
+
+🔧 Cambio 4
+El cliente informa:
+"Nombre y email son obligatorios."
+¿Qué modificarías?
+
+-->RESPUESTA: Le agregaria el atributo required a su input para convertirlo en obligatorio.
+
+🔧 Cambio 5
+El cliente informa:
+"Queremos que el usuario pueda escribir un mensaje de hasta varias líneas."
+¿Qué elemento utilizarías?
+
+-->RESPUESTA: Utilizaria una etiqueta textarea con medidas establecidas para que el usuario
+pueda escribir varias lineas. 
+
+🧠 Objetivo
+No interesa solamente que el alumno modifique el código.
+Tiene que poder explicar:
+"Elegí esta etiqueta porque..."
+
+
+Nombre y apellido: Adrian Aguirre TS2C
+Curso: Programación de nuevas tecnologias 1
+
+¿Utilicé IA?
+Sí.
+
+¿Qué herramienta utilicé?
+Gemini.
+
+¿Para qué la utilicé?
+La utilicé para que me verifique si mi solución era correcta.
+
+¿Qué modificaciones realicé?
+Modifique la seleccion de carrera a un menu de lista desplegable, agregue el atributo required 
+a los campos de nombre y email, y añadi un campo de comentarios con un textarea con medidas
+especificas.
+
+¿Qué aprendí?
+Aprendí a interpretar los requerimientos del cliente a codigo HTML.
+
+

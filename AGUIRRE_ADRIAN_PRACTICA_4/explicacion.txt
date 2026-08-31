@@ -1,0 +1,64 @@
+🤖 IA permitida
+Podés utilizar IA para generar el formulario.
+👤 Intervención humana
+Después deberás:
+cambiar los nombres de los campos;
+agregar un campo nuevo;
+cambiar el tipo de uno de los campos;
+agregar placeholder;
+agregar required a dos campos.
+
+🧠 Preguntas
+Explicá:
+for="nombre"
+y:
+id="nombre"
+¿Qué relación tienen?
+
+
+--> RESPUESTA: El atributo for e id deben ser iguales para que se vincule el texto con el campo. 
+
+
+🔧 Error para encontrar
+Corregí este código:
+<label for="nombre">
+    Nombre
+</label>
+
+<input
+    type="text"
+    id="apellido"
+>
+Explicá qué estaba mal.
+
+
+--> RESPUESTA: El atributo for es distinto del atributo id, por lo tanto no quedarian vinculados. 
+
+
+🗣️ Defensa oral
+El profesor puede preguntarte:
+¿Qué pasa si cambio el id del input pero no cambio el for del label?
+
+
+--> RESPUESTA: El label con el input, no quedarian vinculados.
+
+
+Nombre y apellido: Adrian Aguirre TS2C
+Curso: Programación
+
+¿Utilicé IA?
+Sí.
+
+¿Qué herramienta utilicé?
+Gemini.
+
+¿Para qué la utilicé?
+La utilicé para aprender a ordenar un formulario con la etiqueta <br>.
+
+¿Qué modificaciones realicé?
+Agregue un input de tipo checkbox y un boton de enviar.
+
+¿Qué aprendí?
+Aprendí para qué sirve la etiqueta <br>, como ordenar un formulario, para que sirve el atributo
+required y placeholder.
+

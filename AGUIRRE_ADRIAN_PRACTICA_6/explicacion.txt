@@ -1,0 +1,59 @@
+🤖 IA permitida
+Podés utilizar IA para generar el formulario.
+👤 Pero...
+Una vez generado:
+Modificación 1
+Agregar un campo:
+Teléfono.
+Modificación 2
+Agregar:
+Fecha de nacimiento.
+Modificación 3
+Hacer obligatorios:
+Nombre
+Email
+Curso
+Modificación 4
+Cambiar el texto del botón.
+Modificación 5
+Agregar una opción propia al curso.
+
+
+🧠 Explicación
+Entregar debajo del formulario:
+Utilicé <label> para relacionar el texto con el campo y el usuario conozca que dato hay que
+ingresar.
+
+Utilicé <input type="email"> porque valida que el texto ingresado tenga formato de correo.
+
+Utilicé radio para que el usuario seleccione una sola modalidad en lugar de dos al mismo tiempo.
+
+Utilicé checkbox para que el usuario tenga multiples elecciones de conocimientos.
+
+Utilicé select para que el usuario pueda seleccionar un curso sin la necesidad de ocupar toda la
+pantalla.
+
+Utilicé textarea para que el usuario pueda escribir un mensaje o comentario largo antes de
+inscribirse.
+
+
+Nombre y apellido: Adrian Aguirre TS2C
+Curso: Programación de nuevas tecnologias 1
+
+¿Utilicé IA?
+Si.
+
+¿Qué herramienta utilicé?
+Gemini.
+
+¿Para qué la utilicé?
+La utilicé para reforzar los conocimientos adquiridos en las practicas anteriores.
+
+¿Qué modificaciones realicé?
+Agregué los campos teléfono y fecha de nacimiento, puse obligatorios con required el nombre,
+mail y curso. Tambien cambie el texto del boton por inscribirme y agregue la opcion Python
+a curso.
+
+¿Qué aprendí?
+Reforce todos los conocimientos adquiridos en las practicas 1 al 5 y como añadirle medidas
+con width y height a un textarea.

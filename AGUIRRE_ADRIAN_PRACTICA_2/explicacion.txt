@@ -1,0 +1,54 @@
+🤖 IA permitida
+Podés utilizar IA para generar la estructura.
+👤 Intervención humana
+La IA probablemente te genere ejemplos.
+Debés:
+reemplazar todos los datos por información real;
+agregar dos elementos que no aparezcan en la respuesta de la IA;
+eliminar uno;
+cambiar el orden de una lista.
+🧠 Preguntas
+¿Cuál es la diferencia entre <ul> y <ol>?
+¿Para qué sirve <li>?
+¿Qué diferencia existe entre <strong> y <em>?
+
+-> RESPUESTA 1: La diferencia es que la etiqueta <ul> genera listas desordenadas y la
+etiqueta <ol> genera listas ordenadas.
+
+-> RESPUESTA 2: La etiqueta <li> sirve para representar cada elemento de la lista.
+
+-> RESPUESTA 3: La etiqueta <strong> sirve para poner el texto en negrita y darle importancia
+al texto. La etiqueta <em> sirve para poner el texto en italica y hacer enfasis en una parte 
+del texto.
+
+
+🔧 Cambio sorpresa
+El cliente informa que el orden de las películas no importa, pero el orden de las actividades sí.
+¿Qué lista debería utilizarse en cada caso?
+Explicá tu decisión.
+
+-> RESPUESTA: Utilice la etiqueta <ul> para generar la lista de peliculas ya que su orden no
+importa, ya que solo lo marca con puntos, y utilice la etiqueta <ol> para generar la lista
+de las actividades preferidas ya que el cliente necesitaba un orden y estas se generan con
+numeración en orden ascendente.
+
+
+Nombre y apellido: Adrian Aguirre TS2C
+Curso: Programación de nuevas tecnologias 1
+
+¿Utilicé IA?
+Sí.
+
+¿Qué herramienta utilicé?
+Gemini.
+
+¿Para qué la utilicé?
+La utilicé para aprende los nuevos conceptos de las etiquetas <strong> y <em>.
+
+¿Qué modificaciones realicé?
+Realice los cambios de las listas ordenadas y desordenadas solicitadas por el cliente.
+
+¿Qué aprendí?
+Aprendí para qué sirven las etiquetas <strong> y <em> y como su importancia influye en el texto.
+
+

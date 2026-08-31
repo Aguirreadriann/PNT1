@@ -1,0 +1,54 @@
+👤 Intervención humana
+La IA te genera el código inicial.
+Vos deberás:
+Agregar una nueva carrera.
+Agregar una nueva tecnología.
+Eliminar una opción.
+Cambiar el lenguaje principal.
+Hacer que solamente pueda seleccionarse un lenguaje.
+
+🧠 Preguntas
+¿Por qué utilizamos radio para el lenguaje?
+
+--> RESPUESTA: Se utiliza radio para seleccionar una sola opción.
+
+¿Por qué utilizamos checkbox para las tecnologías?
+
+--> RESPUESTA: Se utiliza checkbox porque se pueden seleccionarvarias opciones.
+
+¿Por qué utilizamos select para la carrera?
+
+--> RESPUESTA: Para que el usuario pueda elegir una de las opciones asignadas, sin ocupar
+mucho espacio en la pantalla.
+
+🔧 Cambio sorpresa
+El cliente dice:
+"Ahora el alumno puede conocer varios lenguajes."
+¿Qué parte del formulario cambiarías?
+¿Por qué?
+
+--> RESPUESTA: Podria reemplazar por un input tipo checkbox para seleccionar varias opciones.
+
+
+Nombre y apellido: Adrian Aguirre TS2C
+Curso: Programación de nuevas tecnologias 1
+
+¿Utilicé IA?
+Sí.
+
+¿Qué herramienta utilicé?
+Gemini.
+
+¿Para qué la utilicé?
+La utilicé para aprender a usar una etiqueta <option> dentro de una eqtiqueta <select>.
+Tambien para aprender a como agrupar un input tipo radio con el mismo atributo name, para 
+que solo se pueda seleccionar una sola opción.
+
+¿Qué modificaciones realicé?
+Agregué una nueva carrera y una tecnologia, elimine una opción y cambie el lenguaje principal.
+
+¿Qué aprendí?
+Aprendí como utilizar la etiqueta <select> con sus respectivas etiquetas <option> y agrupar
+un input tipo radio con su atributo name.
+
+

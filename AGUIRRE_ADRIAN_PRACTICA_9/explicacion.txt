@@ -1,0 +1,26 @@
+Nombre y apellido: Adrian Aguirre TS2C
+Curso: Programación de nuevas tecnologias 1
+
+1. ¿Utilizaste IA?
+Sí.
+
+2. ¿Qué herramienta utilizaste?
+Gemini.
+
+3. ¿Para qué utilizaste IA?
+La utilice para que me guie a estructurar el sitio, pero sin regalarme el codigo, para poder aplicarlo por mi cuenta.
+
+4. ¿Qué partes modificaste?
+Cree una tabla para el menu de descripciones y precios, organice las secciones con los titulos de diferentes jerarquias
+y agregue un formulario de reserva, con un desplegable de horarios.
+
+5. ¿Qué problema encontraste durante el desarrollo?
+Las imagenes se me deformaban al cambiar el tamaño de la pantalla y el campo del textarea era demasiado chico para
+que el usuario escribiera comodamente.
+
+6. ¿Cómo lo solucionaste?
+Para las imagenes utilice el atributo width al 100% para que ocupen todo el ancho, manteniendo su propórcio original y
+para el textarea defini medidas fijas con el atributo width y height para que el campo estuviese visible para el usuario.
+
+7. El profesor elige tres etiquetas de tu código y deben explicar para qué sirven.
+

@@ -1,0 +1,31 @@
+1. El objeto JavaScript construido.
+
+const usuario = {
+        nombre: "Adrian",
+        email: "Adrian@gmail.com",
+        edad: 32
+    };
+
+2. El JSON generado.
+
+{
+  "nombre": "Adrian",
+  "email": "Adrian@gmail.com",
+  "edad": 32
+}
+
+3. Una explicación de la diferencia entre el objeto JavaScript y el JSON obtenido.
+
+- El objeto JS es la estructura activa en la memoria del navegador lista para ser
+usada por el programa. No necesitan comillas obligatorias.
+- El JSON es una cadena de texto plano que representa esos mismos datos, pero bajo
+reglas estrictas de sintaxis.
+
+4. Una descripción del momento del flujo en el que sería necesario convertir los datos a
+JSON.
+
+La conversion se debe realizar justo antes de enviar la informacion a traves de internet.
+Como por la red solo puede viajar texto plano y no estructuras de memoria del navegador,
+es necesario transformar el objeto en texto JSON en el instante preciso a realizar el envio.
+
+

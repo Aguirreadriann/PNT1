@@ -1,0 +1,40 @@
+Ejercicio 5:
+
+1.Solicitud: POST /api/usuarios
+- Metodo HTTP: POST
+- Endpoint recibido: /api/usuarios
+- Servicio al que se dirige: Servicio de Usuarios.
+- Justificacion: El endpoint coincide directamente con la ruta del recurso de usuarios.
+Al utilizar el metodo POST, el Gateway comprende que el frontend esta intentando crear
+un nuevo usuario en la base de datos de dicho servicio.
+
+2.Solicitud: GET /api/productos
+- Metodo HTTP: GET
+- Endpoint recibido: /api/productos
+- Servicio al que se dirige: Servicio de Productos
+- Justificacion: El Gateway lee la ruta "/api/productos" y redirige el trafico al Servicio
+que administra el inventario de productos. Al usar el metodo GET, el servior sabe que el
+objetivo del navegador no es crear nada nuevo, sino unicamente consultar o leer la lista
+productos existentes.
+
+3.Solicitud: POST /api/pedidos
+- Metodo HTTP: POST
+- Endpoint recibido: /api/pedidos
+- Servicio al que se dirige: Servicio de pedidos.
+- Justificacion: La ruta indica que la solicitud esta relacionada con las compras. Al viajar
+con el metodo POST, se indica la accion de crear una nueva orden de pedido en la base de datos
+del sistema.
+
+4.Solicitud: GET /api/usuarios
+- Metodo HTTP: GET
+- Endpoint recibido: /api/usuarios
+- Servicio al que se dirige: Servicio de Usuarios.
+- Justificacion: El API Gateway deriva la solicitud al mismo servicio de usuarios pero el backend procesara
+esta llamada para listar o consultar los usuarios registrados en lugar de crear un registro nuevo.
+
+5.Solicitud: POST /api/libros
+- Metodo HTTP: POST
+- Endpoint recibido: /api/libros
+- Servicio al que se dirige: Servicio de Libros.
+- Justificacion: Al recibir el endpoint "/api/libros" y viajar con el metodo POST, el API Gateway rutea
+el JSON que contiene el titulo, genero y paginas hacia al backend especifico encargado de guardar libros.

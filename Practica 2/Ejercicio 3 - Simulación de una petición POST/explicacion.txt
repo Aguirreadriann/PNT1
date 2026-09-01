@@ -1,0 +1,28 @@
+1. ¿Qué información se envía en la solicitud?
+
+Se envian los datos que el usuario completó en el formulario (nombre, email y edad)
+agrupados dentro de un objeto JS, el cual convertimos a formato de texto JSON para
+su transmision.
+
+2. ¿Por qué utilizaste el método POST?
+
+Porque es el metodo diseñado para enviar informacion nueva hacia un servidor con la
+intencion de crear o registrar un recurso.
+
+3. ¿Qué función cumple el body?
+
+El body funciona como contenedor principal de la carga util. Es el paquete fisico 
+donde viaja toda la informacion que el formulario recolectó y que el servidor necesita
+procesar y guardar.
+
+4. ¿Por qué se utiliza Content-Type: application/json?
+
+Porque es el encabezado que le avisa al servidor que tipo de datos le estamos enviando.
+Al definirlo de esa manera el backend sabe que el texto que viene adentro del body debe
+ser interpretado y decodificado bajo las reglas de formato JSON.
+
+5. ¿Qué función cumple JSON.stringify() dentro de la solicitud?
+
+Sirve para transformar nuestro objeto de JS en una cadena de texto plano bajo el estandar
+JSON. Como las redes de internet solo pueden transportar texto plano, es indispensable
+para empaquetar datos antes de realizar el envio con fetch().

@@ -1,0 +1,20 @@
+1. Qué campos agregaste.
+
+Agregue los campos de email (con un input tipo email: que utiliza el formato @) 
+y de edad (con un input de tipo number: para que solo se puedan ingresar numeros).
+
+2. Cómo obtenés el valor de cada campo desde JavaScript.
+
+Se obtiene mediante document.getElementById("").value, que accede a los elementos
+mediante su id y obtiene el texto ingresado por el usuario.
+
+3. Qué estructura utilizaste para almacenar la información.
+
+Utilice la estructura const usuario = {nombre, email,edad} 
+
+4. Por qué considerás que esa estructura es adecuada.
+
+Considero que es la mas adecuada porque permite agrupar multiples datos relacionados
+sobre una misma entidad (usuario). Facilita la lectura, la organizacion del codigo
+y nos permite usar la funcion JSON.stringify(usuario) para transformar la informacion
+a formato JSON y enviarla en el cuerpo de la peticion.

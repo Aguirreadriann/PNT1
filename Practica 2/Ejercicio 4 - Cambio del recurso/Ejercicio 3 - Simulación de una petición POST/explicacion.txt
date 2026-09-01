@@ -1,0 +1,29 @@
+1. Qué recurso seleccionaste.
+
+Seleccione el recurso "Libros".
+
+2. Qué datos consideraste necesarios.
+
+Considere necesarios los datos:
+-Titulo del Libros: en tipo texto para identificar la obra.
+-Genero literario: en tipo select, para selecionar las categorias literarias.
+-Cantidad de paginas: en tipo numerico, para almacenar la longitud fisica de la obra.
+
+3. Qué endpoint utilizaste.
+ 
+Utilice el endpoint: "/api/libros"
+
+4. Por qué el endpoint representa correctamente al recurso.
+
+Representa correctamente al recurso porque sigue las convenciones de diseño de APIs RESTful.
+Los endpoints deben ser escritos con sustantivos en plural y en minusculas para indicar con
+claridad que estamos enviando datos para interactuar con la coleccion de libros.
+
+5. Qué modificaciones debiste realizar respecto del ejercicio anterior.
+
+- En el HTML modifiqué el ID del formulario a "formLibro", eliminé los inputs de usuarios
+y agregué un input de tipo texto llamado "titulo", una etiqueta select para el "genero",
+y un input numerico para las "paginas".
+- En el JS modifique el ID en el "document.getElementById" para capturar el nuevo
+formulario, actualice las variables que extraen la informacion del DOM, estructuré
+el objeto "libro" con sus nuevas propieades y cambié la ruta dek metodo fetch().

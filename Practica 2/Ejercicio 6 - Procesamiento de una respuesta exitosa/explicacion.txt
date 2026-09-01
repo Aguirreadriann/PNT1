@@ -1,0 +1,4 @@
+1. Qué respuesta recibe el frontend.
+2. Cómo se procesa la respuesta.
+3. Cómo se muestra el resultado al usuario.
+4. Por qué resulta conveniente mostrar la respuesta dentro de la página

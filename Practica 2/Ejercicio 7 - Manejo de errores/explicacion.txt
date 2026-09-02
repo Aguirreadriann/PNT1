@@ -1,0 +1,24 @@
+1. Qué mensaje se muestra cuando la operación es exitosa.
+
+Se muestra el mensaje "Operación realizada correctamente" en color verde.
+
+2. Qué mensaje se muestra cuando ocurre un error.
+
+Se muestra el mensaje "Error: No fue posible conectar con el servidor" en color rojo.
+
+3. En qué parte del flujo podría haberse producido el error.
+
+- En la conexion: si el usuario no tiene internet o el servidor esta caido.
+- En el propio servidor: si los datos enviados no cumplen con lo que pide el backend y
+este rechaza la peticion.
+
+4. Cómo afecta ese error al usuario de la aplicación.
+
+Le impide guardar su libro en el sistema. Si no le mostramos el mensaje de error en rojo
+en la pantalla, el usuario se quedaria apretando el boton sin saber si la pagina se tildó
+o si sus datos llegaron a guardarse.
+
+5. Qué información adicional sería útil mostrar al usuario.
+
+Seria util poner un boton de "reintentar" o un texto que le sugiera revisar su conexion
+a internet antes de volver a enviar el formulario.

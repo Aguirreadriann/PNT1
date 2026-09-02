@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 4 - Registro de libros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <form action="" id="formLibro">
+
+                <label for="titulo">Titulo</label><br>
+                <input type="text" name="titulo" id="titulo" required><br>
+
+                <label for="genero">Género Literario</label><br>
+                <select name="genero" id="genero" required>
+                    <option value="">-- Selecciona un genero --</option>
+                    <option value="Novela">Novela</option>
+                    <option value="Ensayo">Ensayo</option>
+                    <option value="Poesia">Poesia</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Sci-fi">Sci-fi</option>
+                </select><br>
+
+                <label for="paginas">Cantidad de Páginas</label><br>
+                <input type="number" name="paginas" id="paginas" required><br>
+
+                <button type="submit">Guardar</button>
+
+                <h3>JSON Generado</h3>
+
+                <pre id="jsonGenerado"></pre>
+
+                <p id="resultado"></p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

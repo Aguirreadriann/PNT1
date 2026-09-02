@@ -1,0 +1,50 @@
+1. Qué acción realiza el usuario.
+
+El usuario completa el formulario con los datos del libro (titulo, genero y paginas)
+y hace click en el boton "Guardar".
+
+2. Qué información obtiene el frontend.
+
+JavaScript captura de inmediato los valores exactos que el usuario escribio dentro de
+cada campo del formulario usando el DOM.
+
+3. Cómo se prepara la solicitud.
+
+JavaScript guarda estos datos capturados en un objeto de JavaScript comun y corriente.
+Inmediatamente despues, utiliza "JSON.stringify()" para transformar ese objeto en una
+cadena de texto plano con formato JSON, que es el unico formato que puede viajar por
+internet.
+
+4. Qué función cumple fetch().
+
+ES la funcion encargada de realizar la peticion HTTP hacia el servidor de forma asincronica,
+llevando el paquete en el body y avisando que tipo de datos transporta en el headers.
+
+5. Qué rol cumple el API Gateway.
+
+Cumple el rol de recibir la peticion en el endpoint "/api/libros" y decide a que servicio
+de backend especifico derivaria segun la ruta y el metodo HTTP.
+
+6. Qué responsabilidad tiene el backend.
+
+Recibe el paquete JSON del Gateway, procesa los datos, ejecuta la logica necesaria para
+guardar el libro y genera una respuesta (un JSON que dice si todo salio "OK" o si hubo
+algun error).
+
+7. Cómo regresa la respuesta al frontend.
+
+El backend envia su respuesta de vuelta por internet en formato JSON. Cuando el "fetch()"
+la recibe, usamos "response.json()" para traducir esa cadena de texto JSON otra vez a un
+objeto de JavaScript que el frontend pueda leer.
+
+8. Cómo se actualiza la página.
+
+JavaScript lee la propiedad "data.mensaje" de la respuesta traducida y usando el DOM,
+inyecta ese texto dentro del parrafo "<p id="resultado">" cambiando el color a verde.
+
+9. Qué ocurre ante un error
+
+Si la conexion de internet se cae o el servidor falla, el envio se interrumpe. JavaScript
+detecta esta falla y salta directamente al bloque ".catch()", donde frena la caida de la
+pagina y le muestra al usuario un mensaje en color rojo para informarle que la operacion
+no pudo realizarse.

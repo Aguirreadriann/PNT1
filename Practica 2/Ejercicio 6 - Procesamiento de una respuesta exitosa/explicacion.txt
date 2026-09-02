@@ -1,4 +1,25 @@
-1. Qué respuesta recibe el frontend.
+1. Qué respuesta recibe el frontend
+
+El frontend recibe una respuesta del backed en formato JSON con la siguiente estructura
+{
+  "estado": "OK",
+  "mensaje": "Operación realizada correctamente"
+}
+
 2. Cómo se procesa la respuesta.
+
+Primero se utiliza la funcion "response.JSON()" para transformar la cadena de texto JSON
+en un objeto que JS pueda entender. Luego entramos directo a "data.mensaje" para sacar
+el texto de exito que nos mando el servidor.
+
 3. Cómo se muestra el resultado al usuario.
+
+Buscamos la etiqueta " <p id="resultado"> " usando su ID y le agregamos el mensaje del
+servidor con ".innerText". Tambien le cambiamos el color a verde para que note a simple
+vista que se guardó bien.
+
 4. Por qué resulta conveniente mostrar la respuesta dentro de la página
+
+Por que el usuario comun no sabe abrir la consola para ver si el proceso funcionó. si lo 
+mostramos directo en la pantalla, el usuario se queda tranquilo de que su libro se guardó
+sin necesidad de recargar la pagina.

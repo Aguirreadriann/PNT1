@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica AJAX - API Gateway - Backend</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Práctica Integradora</h1>
+    <p>AJAX, API Gateway y Backend</p>
+</header>
+
+<main>
+
+    <section class="card">
+        <h2>Registro de libro</h2>
+        <p>Completá los datos del libro y presioná "Enviar".</p>
+
+        <form id="formLibro">
+
+            <div class="campo">
+                <label for="titulo">Titulo del libro:</label>
+                <input type="text" id="titulo" placeholder="Ingrese el titulo de la obra" required>
+            </div>
+
+            <div class="campo">
+                <label for="genero">Género Literario</label>
+                <select id="genero" required>
+                    <option value="">-- Selecciona un genero --</option>
+                    <option value="Novela">Novela</option>
+                    <option value="Ensayo">Ensayo</option>
+                    <option value="Poesia">Poesia</option>
+                    <option value="Terror">Terror</option>
+                    <option value="Sci-fi">Sci-fi</option>
+                </select>
+            </div>
+
+            <div class="campo">
+                <label for="paginas">Cantidad de Páginas</label>
+                <input type="number" id="paginas"  placeholder="Ingrese la cantidad de paginas">
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Datos preparados</h2>
+        <p>En esta sección se visualizarán los datos antes de ser enviados.</p>
+        <pre id="datosPreparados">Esperando datos...</pre>
+    </section>
+
+    <section class="card">
+        <h2>API Gateway</h2>
+
+        <div class="flujo">
+            <div class="bloque frontend">FRONTEND</div>
+            <div class="flecha">→</div>
+            <div class="bloque gateway">API GATEWAY</div>
+            <div class="flecha">→</div>
+            <div class="bloque backend">BACKEND</div>
+        </div>
+
+        <p id="gatewayResultado">Esperando una solicitud...</p>
+    </section>
+
+    <section class="card">
+        <h2>Respuesta del servidor</h2>
+        <div id="resultado" class="resultado">
+            Todavía no se realizó ninguna operación.
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>JSON enviado</h2>
+        <pre id="jsonResultado">No hay información todavía.</pre>
+    </section>
+
+    <section class="card ayuda">
+        <h2>Recorrido de la solicitud</h2>
+        <ol>
+            <li>El usuario completa el formulario.</li>
+            <li>JavaScript obtiene los datos.</li>
+            <li>Se construye un objeto JavaScript.</li>
+            <li>El objeto puede convertirse a JSON.</li>
+            <li>Se prepara una petición HTTP.</li>
+            <li>La solicitud llega al API Gateway.</li>
+            <li>El Gateway determina el servicio.</li>
+            <li>El backend procesa la solicitud.</li>
+            <li>El backend genera una respuesta.</li>
+            <li>El frontend muestra el resultado.</li>
+        </ol>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

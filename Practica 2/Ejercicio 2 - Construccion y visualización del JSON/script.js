@@ -34,7 +34,7 @@ const formulario = document.getElementById("formUsuario");
 // 2. EVENTO SUBMIT
 // =======================================================
 
-formulario.addEventListener("submit", function(event) {
+formulario.addEventListener("submit", function (event) {
 
     event.preventDefault();
 
@@ -64,7 +64,7 @@ formulario.addEventListener("submit", function(event) {
     const usuario = {
         nombre: nombre,
         email: email,
-        edad: parseInt(edad) 
+        edad: parseInt(edad)
     };
 
 
@@ -85,12 +85,12 @@ formulario.addEventListener("submit", function(event) {
     //
     // ===================================================
 
-    /*
+
     const usuarioJSON = JSON.stringify(usuario);
 
     document.getElementById("jsonResultado").innerText =
         usuarioJSON;
-    */
+
 
 
     // ===================================================

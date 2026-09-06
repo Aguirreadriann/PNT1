@@ -1,9 +1,9 @@
 1. El objeto JavaScript construido.
 
 const usuario = {
-        nombre: "Adrian",
-        email: "Adrian@gmail.com",
-        edad: 32
+        nombre: nombre,
+        email: email,
+        edad: parseInt(edad)
     };
 
 2. El JSON generado.

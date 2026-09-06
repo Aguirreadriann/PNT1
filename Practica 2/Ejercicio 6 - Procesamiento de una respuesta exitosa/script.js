@@ -1,53 +1,228 @@
-// capturar el formulario de libros desde el DOM
+/*
+=========================================================
+PRÁCTICA AJAX - API GATEWAY - BACKEND
+=========================================================
+
+Este archivo será modificado durante los ejercicios.
+
+Por el momento NO existe un backend real.
+
+El objetivo es simular el recorrido:
+
+    FRONTEND
+       ↓
+     FETCH
+       ↓
+  API GATEWAY
+       ↓
+    BACKEND
+       ↓
+   RESPUESTA
+       ↓
+   FRONTEND
+=========================================================
+*/
+
+// =======================================================
+// 1. OBTENER EL FORMULARIO
+// =======================================================
+
 const formulario = document.getElementById("formLibro");
 
+
+// =======================================================
+// 2. EVENTO SUBMIT
+// =======================================================
+
 formulario.addEventListener("submit", function (event) {
-    // evita que la pagina se recargue automaticamente al enviar
+
     event.preventDefault();
 
-    // obtener los alores ingresados en los campos de libro
-    const titulo = document.getElementById("titulo").value;
-    const genero = document.getElementById("genero").value;
-    const paginas = document.getElementById("paginas").value;
+    // ===================================================
+    // 3. OBTENER DATOS DEL FORMULARIO
+    // ===================================================
 
-    //ALmacenar los datos en un obj. de js
+    const titulo =
+        document.getElementById("titulo").value;
+
+    const genero =
+        document.getElementById("genero").value;
+
+    const paginas =
+        document.getElementById("paginas").value;
+
+
+    // ===================================================
+    // EJERCICIO 1
+    // ===================================================
+    //
+    // Construir un objeto utilizando los datos
+    // obtenidos del formulario.
+    //
+    // ===================================================
+
     const libro = {
         titulo: titulo,
         genero: genero,
-        paginas: parseInt(paginas) // parsea el texto a numero
+        paginas: parseInt(paginas)
     };
 
-    // Convertir el objeto js a una cadena de texto JSON
-    const libroJSON = JSON.stringify(libro, null, 2); // (u,null,2) es para que el JSON se genere con sangrias y saltos de linea.
 
-    // mostrar el JSON en la pagina web
-    document.getElementById("jsonGenerado").innerText = libroJSON;
+    // ===================================================
+    // MOSTRAR DATOS
+    // ===================================================
 
-    // realiza la peticion POST enviando el JSON al endpoint de libros
+    document.getElementById("datosPreparados").innerText =
+        JSON.stringify(libro, null, 4);
+
+
+    // ===================================================
+    // EJERCICIO 2
+    // ===================================================
+    //
+    // Convertir el objeto usuario a JSON.
+    // Mostrarlo en jsonResultado.
+    //
+    // ===================================================
+
+
+    const libroJSON = JSON.stringify(libro, null, 4);
+
+    document.getElementById("jsonResultado").innerText =
+        libroJSON;
+
+
+
+    // ===================================================
+    // EJERCICIO 3
+    // ===================================================
+    //
+    // Preparar una petición POST utilizando fetch().
+    //
+    // Endpoint:
+    // /api/usuarios
+    //
+    // ===================================================
+
+
     fetch("/api/libros", {
+
         method: "POST",
+
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(libro) // enviamos el obj. "libro" como json
+
+        body: JSON.stringify(libro)
+
     })
         .then(response => response.json())
         .then(data => {
-            // esta linea lee la propiedad "mensaje" directamente desde el objeto "data" devuelto por el servidor.
             document.getElementById("resultado").innerText = data.mensaje;
-            // le aplicamos color
             document.getElementById("resultado").style.color = "green";
         })
         .catch(error => {
-            // simulamos la respuesta exitosa que nos daria el servidor
-            const respuestaExitosaSimulada = {
-                "estado": "OK",
-                "mensaje": "Operación realizada correctamente"
-            };
-            // dibujamos en pantalla el msj simulado
-            document.getElementById("resultado").innerText = respuestaExitosaSimulada.mensaje;
-            document.getElementById("resultado").style.color = "green";
-
-            
+            console.error(error);
         });
+
+
+
+    // ===================================================
+    // EJERCICIO 4
+    // ===================================================
+    //
+    // Cambiar el recurso.
+    //
+    // Posibilidades:
+    // /api/productos
+    // /api/pedidos
+    // /api/libros
+    // /api/peliculas
+    //
+    // También deberán modificarse los datos enviados.
+    //
+    // ===================================================
+
+
+    // ===================================================
+    // EJERCICIO 5
+    // ===================================================
+    //
+    // Simular el API Gateway.
+    //
+    // Mostrar la decisión en gatewayResultado.
+    //
+    // ===================================================
+
+
+    const endpoint = "/api/libros";
+
+    let servicio = "";
+
+    if (endpoint === "/api/usuarios") {
+        servicio = "Servicio de Usuarios";
+    } else if (endpoint === "/api/productos") {
+        servicio = "Servicio de Productos";
+    } else if (endpoint === "/api/pedidos") {
+        servicio = "Servicio de Pedidos";
+    } else if (endpoint === "/api/libros") {
+        servicio = "Servicio de Libros";
+    } else {
+        servicio = "Servicio desconocido";
+    }
+
+    document.getElementById("gatewayResultado").innerText =
+        "El API Gateway dirige la solicitud a: " + servicio;
+
+
+    // ===================================================
+    // EJERCICIO 6
+    // ===================================================
+    //
+    // Simular una respuesta exitosa del backend.
+    //
+    // ===================================================
+
+
+    const respuesta = {
+        estado: "OK",
+        mensaje: "Operación realizada correctamente"
+    };
+
+    document.getElementById("resultado").innerText =
+        respuesta.mensaje;
+
+
+    // ===================================================
+    // EJERCICIO 7
+    // ===================================================
+    //
+    // Incorporar el manejo de errores.
+    //
+    // ===================================================
+
+    /*
+    try {
+
+        // Código que puede generar un error
+
+    } catch (error) {
+
+        document.getElementById("resultado").innerText =
+            "Ocurrió un error";
+    }
+    */
+
+
+    // ===================================================
+    // EJERCICIO 8
+    // ===================================================
+    //
+    // Integrar el recorrido completo:
+    //
+    // Formulario → Objeto → JSON → Fetch →
+    // API Gateway → Backend → Respuesta → Frontend
+    //
+    // ===================================================
+
 });

@@ -1,6 +1,6 @@
 1. Qué respuesta recibe el frontend
 
-El frontend recibe una respuesta del backed en formato JSON con la siguiente estructura
+El frontend recibe del servidor un texto en formato JSON que avisa que la operacion fue un exito.
 {
   "estado": "OK",
   "mensaje": "Operación realizada correctamente"

@@ -5,7 +5,7 @@ Seleccione el recurso "Libros".
 2. Qué datos consideraste necesarios.
 
 Considere necesarios los datos:
--Titulo del Libros: en tipo texto para identificar la obra.
+-Titulo del Libro: en tipo texto para identificar la obra.
 -Genero literario: en tipo select, para selecionar las categorias literarias.
 -Cantidad de paginas: en tipo numerico, para almacenar la longitud fisica de la obra.
 
@@ -26,4 +26,4 @@ y agregué un input de tipo texto llamado "titulo", una etiqueta select para el 
 y un input numerico para las "paginas".
 - En el JS modifique el ID en el "document.getElementById" para capturar el nuevo
 formulario, actualice las variables que extraen la informacion del DOM, estructuré
-el objeto "libro" con sus nuevas propieades y cambié la ruta dek metodo fetch().
+el objeto "libro" con sus nuevas propieades y cambié la ruta del metodo fetch().

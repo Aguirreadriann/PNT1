@@ -1,8 +1,7 @@
 1. ¿Qué información se envía en la solicitud?
 
-Se envian los datos que el usuario completó en el formulario (nombre, email y edad)
-agrupados dentro de un objeto JS, el cual convertimos a formato de texto JSON para
-su transmision.
+Se envia un paquete de texto con formato JSON que tiene el nombre, email y edad, que
+el usuario escribio en el formulario
 
 2. ¿Por qué utilizaste el método POST?
 

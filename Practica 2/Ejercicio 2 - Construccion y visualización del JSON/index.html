@@ -1,39 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 2 Ajax y Backend</title>
+    <title>Práctica AJAX - API Gateway - Backend</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <main>
-        <section>
-            <form action="" id="formUsuario">
 
-                <label for="nombre">Nombre</label><br>
-                <input type="text" name="nombre" id="nombre" required><br>
+<header>
+    <h1>Práctica Integradora</h1>
+    <p>AJAX, API Gateway y Backend</p>
+</header>
 
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" required><br>
+<main>
 
-                <label for="edad">Edad</label><br>
-                <input type="number" name="edad" id="edad" required><br>
+    <section class="card">
+        <h2>Registro de usuario</h2>
+        <p>Completá los datos y presioná "Enviar".</p>
 
-                <button type="submit">Enviar</button>
+        <form id="formUsuario">
 
-                <h3>JSON Generado</h3>
-                
-                <pre id="jsonGenerado"></pre>
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+            </div>
 
-                <p id="resultado"></p>
-            </form>
-        </section>
-    </main>
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Ingrese su email" required>
+            </div>
 
-    <script src="script.js"></script>
+            <div class="campo">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" placeholder="Ingrese su edad" required>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <section class="card">
+        <h2>Datos preparados</h2>
+        <p>En esta sección se visualizarán los datos antes de ser enviados.</p>
+        <pre id="datosPreparados">Esperando datos...</pre>
+    </section>
+
+    <section class="card">
+        <h2>API Gateway</h2>
+
+        <div class="flujo">
+            <div class="bloque frontend">FRONTEND</div>
+            <div class="flecha">→</div>
+            <div class="bloque gateway">API GATEWAY</div>
+            <div class="flecha">→</div>
+            <div class="bloque backend">BACKEND</div>
+        </div>
+
+        <p id="gatewayResultado">Esperando una solicitud...</p>
+    </section>
+
+    <section class="card">
+        <h2>Respuesta del servidor</h2>
+        <div id="resultado" class="resultado">
+            Todavía no se realizó ninguna operación.
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>JSON enviado</h2>
+        <pre id="jsonResultado">No hay información todavía.</pre>
+    </section>
+
+    <section class="card ayuda">
+        <h2>Recorrido de la solicitud</h2>
+        <ol>
+            <li>El usuario completa el formulario.</li>
+            <li>JavaScript obtiene los datos.</li>
+            <li>Se construye un objeto JavaScript.</li>
+            <li>El objeto puede convertirse a JSON.</li>
+            <li>Se prepara una petición HTTP.</li>
+            <li>La solicitud llega al API Gateway.</li>
+            <li>El Gateway determina el servicio.</li>
+            <li>El backend procesa la solicitud.</li>
+            <li>El backend genera una respuesta.</li>
+            <li>El frontend muestra el resultado.</li>
+        </ol>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
 </body>
-
 </html>

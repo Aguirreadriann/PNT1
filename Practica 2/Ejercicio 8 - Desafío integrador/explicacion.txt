@@ -1,7 +1,7 @@
 1. Qué acción realiza el usuario.
 
 El usuario completa el formulario con los datos del libro (titulo, genero y paginas)
-y hace click en el boton "Guardar".
+y hace click en el boton "Enviar".
 
 2. Qué información obtiene el frontend.
 
@@ -40,7 +40,7 @@ objeto de JavaScript que el frontend pueda leer.
 8. Cómo se actualiza la página.
 
 JavaScript lee la propiedad "data.mensaje" de la respuesta traducida y usando el DOM,
-inyecta ese texto dentro del parrafo "<p id="resultado">" cambiando el color a verde.
+inyecta ese texto dentro del contenedor con ID "resultado", cambiando el color a verde.
 
 9. Qué ocurre ante un error
 
